@@ -5,7 +5,7 @@ import subprocess
 import signal
 
 # --- CONFIGURATION ---
-PICS_PATH = "/home/dje/gdrive_pics/"
+PICS_PATH = "/home/dje/processed_pics/"
 DELAY = 5
 PICTURES = []
 
