@@ -15,5 +15,3 @@ for img in "$SOURCE"/*.{jpg,jpeg,png,JPG,JPEG,PNG}; do
     echo "Processing file: $filename"    
     convert "$img" -resize "$RES" -quality 80 -strip "$DEST/$filename"
 done
-
-sudo pkill -HUP -f diaporama.py
