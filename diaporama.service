@@ -1,0 +1,17 @@
+# Service config file. To copy to /etc/systemd/system/
+# Then run 'sudo systemctl daemon-reload' and 'sudo systemctl enable diaporama.service'
+
+[Unit]
+Description=Photo slideshow service
+After=multi-user.target
+
+[Service]
+User=dje
+WorkingDirectory=/home/dje/
+ExecStart=/usr/bin/python3 /home/dje/photo_frame/diaporama.py
+Restart=always
+RestartSec=10
+Environment=PYTHONUNBUFFERED=1
+
+[Install]
+WantedBy=multi-user.target
