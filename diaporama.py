@@ -11,7 +11,7 @@ PICTURES = []
 
 
 def clear_pic():
-    subprocess.run(["sudo", "pkill", "-QUIT", "fbi"], stderr=subprocess.DEVNULL)
+    subprocess.run(["sudo", "pkill", "-QUIT", "fbi"], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
 
 
 def display_pic(filepath):
